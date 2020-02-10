@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ListDataAll";
+}
+
+<h2>ListDataAll</h2>
+
+<form>
+    <table class="table">
+        <tr>
+            <td>Year</td>
+            <td>Month</td>
+            <td>Day</td>
+        </tr>
+        @foreach (var item in ViewBag.data as IEnumerable<WebMVC_2.WebMVC_Code2.ItemData>)
+        {
+            <tr>
+                <td>@item.Year</td>
+                <td>@item.Month</td>
+                <td>@item.Day</td>
+            </tr>
+        }
+    </table>
+</form>
+

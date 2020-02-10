@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "FormPost";
+}
+
+<h2>FormPost</h2>
+
+<form action="/Sale/FormPost" method="post">
+
+        <table>
+            <tr>
+                <td><input type="text" name="year" /></td>
+                <td><input type="text" name="month" /></td>
+                <td><input type="text" name="day" /></td>
+            </tr>
+        </table>
+
+        <input type="submit" name="send" value="Отправить" />
+
+    </form>
+
+@*@using (Html.BeginForm("FormPost", "Sale", FormMethod.Post))
+    {
+
+        <table>
+            <tr>
+                <td><input type="text" name="year" /></td>
+                <td><input type="text" name="month" /></td>
+                <td><input type="text" name="day" /></td>
+            </tr>
+        </table>
+
+        <input type="submit" name="send" value="Отправить" />
+    }*@
+
+@*@using (Html.BeginForm("FormPost", "Sale", FormMethod.Post))
+{
+
+    <table>
+        <tr>
+            <td>@Html.TextBox("year")</td>
+            <td>@Html.TextBox("month")</td>
+            <td>@Html.TextBox("day")</td>
+        </tr>
+    </table>
+
+    <input type="submit" name="send" value="Отправить" />
+}*@
+
